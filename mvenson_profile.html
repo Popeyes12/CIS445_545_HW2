@@ -4,8 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+                .color-transition {
+            width: 200px;
+            height: 200px;
+            background: linear-gradient(90deg, #9c27b0, #673ab7);
+            background-size: 200% 100%;
+            transition: background-position 0.5s ease;
+        }
+
+        .color-transition:hover {
+            background-position: -100% 0;
+        }
+    </style>
 </head>
-<body>
-    
+<body class="color-transition">
+    <h1>My Profile</h1>
+
+
+
 </body>
 </html>

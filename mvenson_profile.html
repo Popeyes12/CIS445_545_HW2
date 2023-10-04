@@ -5,17 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-                .color-transition {
-            width: 200px;
-            height: 200px;
-            background: linear-gradient(90deg, #9c27b0, #673ab7);
-            background-size: 200% 100%;
-            transition: background-position 0.5s ease;
-        }
+/* styles.css */
+.color-transition {
+    width: 200px;
+    height: 200px;
+    background: linear-gradient(90deg, #9c27b0, #673ab7);
+    background-size: 200% 100%;
+    animation: breathe 5s ease-in-out infinite;
+}
 
-        .color-transition:hover {
-            background-position: -100% 0;
-        }
+@keyframes breathe {
+    0% {
+        background-position: 100% 0;
+    }
+    50% {
+        background-position: 0% 0;
+    }
+    100% {
+        background-position: 100% 0;
+    }
+}
+
     </style>
 </head>
 <body class="color-transition">
